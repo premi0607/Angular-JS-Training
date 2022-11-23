@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<h3>Choose a Country :</h3>
+<span class="tab"></span><select #country1>
+  <option value="1">Choose a Country</option>
+  <option value="2">India</option>
+  <option value="3">USA</option>
+  <option value="4">France</option>
+</select><br><br>
+<h3>Choose a Country :</h3>
+<span class="tab"></span><select #country2>
+  <option value="1">Choose a Country</option>
+  <option value="2">India</option>
+  <option value="3">USA</option>
+  <option value="4">France</option>
+</select><br><br><br>
+<h3>Enter the Amount :</h3>
+<span class="tab"></span><input type ="text" #number/><br><br><br>
+<span class="tab"></span><button (click) = "Calculate(country1.value,country2.value,number.value)">Calculate the Value</button>
+<h3>Result :</h3>
+<span class="tab"></span>{{result | currency : cur :'symbol':'.2-2'}}
+
+
+
