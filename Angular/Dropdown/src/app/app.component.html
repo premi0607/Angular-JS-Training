@@ -1,0 +1,35 @@
+<H2>Display an Image</H2>
+<p>Pick a Fruit :</p>
+<select #teams (change)="modo(teams.value)">
+  <option value="Pick a Fruit">Pick a Fruit</option>
+  <option value="mod1">APPLE</option>
+  <option value="mod2">MANGO</option>
+  <option value="mod3">ORANGE</option>
+  <option value="mod4">GRAPES</option>
+  <option value="mod5">CHERRY</option>
+</select>
+<br>
+<br>
+<img [src] = img width="500" hight=" 500">
+<br><br>
+<h2>Enter the Name of the animal</h2>
+<p>Enter an animal:</p>
+<input type = text #animal><br><br>
+<button (click) = Display(animal.value)>Submit to See the Animal</button><br><br>
+<img [src] = img2 width="500" hight=" 500">
+{{warning}}
+<br><br>
+<h2>Two Way Binding</h2>
+<p> Enter Your Name</p>
+<input type = text #name ><br><br>
+<button (click) = Disname(name.value)>SUBMIT</button><br><br>
+{{res|uppercase}}<br><br>
+{{res|lowercase}}<br><br>
+{{res|titlecase}}<br><br>
+
+<input type = text #name1 (keypress) = 'NameDis(name1.value)'><br><br>
+{{res1|uppercase}}<br><br>
+{{res1|lowercase}}<br><br>
+{{res1|titlecase}}
+
+
