@@ -1,0 +1,19 @@
+<h1>Multiplication</h1>
+<h2>Enter the numbers</h2>
+<div class = "row app-container mb-1 pt -4">
+    <div class = "col md - 12 text center">
+    <h5>First Number :</h5>
+      <input type ="text" #firstnumber/>
+      <br>
+      <br>
+      <h5>Second Number :</h5>
+      <input type ="text" #secondnumber/>
+      <br>
+      <br>
+      <button (click)= "Calculate(firstnumber.value,secondnumber.value)">Multiply</button>
+      <br>
+      <br>
+      {{result}}
+    </div>
+  </div>
+
