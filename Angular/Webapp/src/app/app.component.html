@@ -1,0 +1,33 @@
+{{title}}
+<div class = "row app-container mb-1 pt -4">
+  <div class = "col md - 12 text center">
+    <h2>Addition of two numbers</h2>
+    <input type ="text" #firstnumber/>
+    <br>
+    <br>
+    <input type ="text" #secondnumber/>
+    <br>
+    <br>
+    <button (click)= "Calculate(firstnumber.value,secondnumber.value)">Add</button>
+    <br>
+    <br>
+    {{result}}
+  </div>
+</div>
+
+<div class = "row app-container mb-1 pt -4">
+  <div class = "col md - 12 text center">
+    <h2>Subtraction of two numbers</h2>
+    <input type ="text" #firstsub/>
+    <br>
+    <br>
+    <input type ="text" #secondsub/>
+    <br>
+    <br>
+    <button (click)= "Calculatesub(firstsub.value,secondsub.value)">Sub</button>
+    <br>
+    <br>
+    {{result2}}
+    
+  </div>
+</div>
